@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Venta de Cursos Online</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Venta de Cursos Online</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+          </ul>
+          <form class="d-flex me-3">
+            <input class="form-control me-2" type="search" placeholder="Buscar cursos" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html" id="cartLink">
+                <i class="fas fa-shopping-cart"></i> Carrito <span id="cartCount"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="userLink" style="display: none;">
+                <i class="fas fa-user"></i> <span id="username"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-light" id="logoutBtn" style="display: none;">Cerrar sesión</button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html" id="loginLink">Ingresar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container my-5">
+      <h1 class="text-center mb-4">Cursos Disponibles</h1>
+      <div class="row" id="productList">
+        
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-light text-center py-3">
+    <p>&copy; 2023 Venta de Cursos Online. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/3f74e91764.js" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
